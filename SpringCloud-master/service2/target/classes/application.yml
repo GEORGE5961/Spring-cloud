@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8083
+
+logging:
+  path: F:\SpringCloud-master\SpringCloud-master\service2\log
+  level:
+    service2: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
